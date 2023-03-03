@@ -1,0 +1,446 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+}
+
+/* Declaring the variable */
+:root {
+    --Soft_orange: hsl(35, 77%, 62%);
+    --Soft_red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish_blue: hsl(233, 8%, 79%);
+    --Dark_grayish_blue: hsl(236, 13%, 42%);
+    --Very_dark_blue: hsl(240, 100%, 5%);
+
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    background-color: var(--Off-white);
+    color: var(--Very_dark_blue);
+    width:100vw;
+    padding-top: 3rem;
+    padding-left: 5rem;
+   
+
+}
+
+
+/* larger screen styling starts here */
+@media screen and (min-width:500px) {
+    
+/* styling header section starts here */
+.mobile-nav-bar{
+    display: none;
+}
+
+header  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+header .logo img{
+    width: 40px;
+}
+header .open-menu
+{
+    display: none;
+}
+
+header .nav-bar
+{
+    margin-right: 15px;
+    font-size: 12px;
+    color: var(--Grayish_blue);
+}
+
+header .nav-bar a
+{
+    margin-right: 15px;
+}
+/* styling header section Ends here */
+
+
+.upper-picture {
+  display: none;
+}
+.laptop-picture
+{
+   
+}
+
+.laptop-picture img {
+    width: 100%;
+    height: 100%;
+}
+
+/* section one starts here */
+.sec-one {
+    margin-top: 10px;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sec-one h2 {
+    font-weight: 800;
+}
+
+.sec-one div p {
+    font-size: 10px;
+    text-align: justify;
+    color: var(--Dark_grayish_blue);
+    
+    line-height: .8rem;
+}
+
+.read-more-btn {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.read-more-btn .btn {
+    padding: 10px 20px;
+    background-color: var(--Soft_red);
+    color: var(--Off-white);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/* section one Ends here */
+
+
+/* section two styling starts here */
+.sec-two {
+    margin-top: 0px;
+    color: var(--Off-white);
+    background-color: var(--Very_dark_blue);
+    padding: 10px;
+    margin-right: 35px;
+    
+}
+
+.sec-two h2 {
+    font-size: 1.5rem;
+    color: var(--Soft_orange);
+    margin-top: 1.5rem;
+}
+
+.sec-two div:not(.sec2-sub-3)
+{
+    line-height: 1rem;
+    padding: 7px 0px;
+    border-bottom: 1px solid var(--Grayish_blue);
+}
+.sec-two div h3
+{
+    font-size: .5rem;
+}
+
+.sec-two div p
+{
+    margin-top: 3px;
+    color: var(--Grayish_blue);
+    font-size: .5rem;
+}
+.sec-two .sec2-sub-1
+{
+    margin-top: 10px;
+}
+
+.sec2-sub-3{
+    line-height: 1.2rem;
+    padding: 15px 0px;
+}
+/* section two styling Ends here */
+
+.section-3-com
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    gap: 15px;
+
+}
+/* section three styling starts here */
+
+.sec-three
+    {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .sec-three .info-box img
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .sec-three .info-box
+    {
+        display: grid;
+        grid-template-columns: 50px 1fr ;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+
+    .sec-three .info-box h2{
+        font-size: 15px;
+        color: var(--Grayish_blue);
+    }
+
+    .sec-three .info-box h3
+    {
+        margin-top: 5px;
+        font-size: 12px;
+        font-weight: 900;
+    }
+
+    .sec-three .info-box p
+
+    {
+        color:var(--Dark_grayish_blue);
+        margin-top: 3px;
+        line-height: .7rem;
+        font-size: 8px;
+    }
+
+    .sec-three .info-box .info-para
+    {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+
+    }
+    /* Hover effects */
+    header a:hover
+    {
+      color: var(--Soft_red);
+    }
+    
+    header a:active{
+        color: var(--Dark_grayish_blue);
+    }
+/* section three styling Ends here */
+
+}
+
+
+
+
+
+
+/* larger screen styling Ends here */
+
+/* Code for Mobile Phones */
+
+@media screen and (max-width:472px) {
+    body {
+        padding: 15px;
+    }
+
+    /* header section styling  start*/
+    header {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        background-color: var(--Off-white);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       padding: 15px 0px; 
+       margin-bottom: 5px;
+    }
+    header .nav-bar{
+        display: none;
+    }
+    header .logo img,
+    header .open-menu img {
+        width: 40px;
+    }
+
+    /* header section styling End*/
+
+    /* Upper picture styling Start */
+    .laptop-picture{
+        display: none;
+    }
+
+    .upper-picture {
+        width: 100%;
+        height: 250px;
+    }
+
+    .upper-picture img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Upper picture styling Ends */
+
+    /* section-one styling starts */
+    .sec-one {
+        margin-top: 10px
+    }
+
+    .sec-one h2 {
+        font-weight: 800;
+    }
+
+    .sec-one p {
+        font-size: 12px;
+        color: var(--Dark_grayish_blue);
+        margin-top: 10px;
+        line-height: 1rem;
+    }
+
+    .read-more-btn {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .read-more-btn .btn {
+        padding: 10px 30px;
+        background-color: var(--Soft_red);
+        color: var(--Off-white);
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    /* section-one styling Ends */
+
+    /* section two styling starts */
+    .sec-two {
+        margin-top: 40px;
+        color: var(--Off-white);
+        background-color: var(--Very_dark_blue);
+        padding: 15px;
+    }
+
+    .sec-two h2 {
+        color: var(--Soft_orange);
+    }
+    
+    .sec-two div:not(.sec2-sub-3)
+    {
+        line-height: 1.2rem;
+        padding: 15px 0px;
+        border-bottom: 1px solid var(--Grayish_blue);
+    }
+    .sec-two div h3
+    {
+        font-size: 15px;
+    }
+
+    .sec-two div p
+    {
+        margin-top: 5px;
+        color: var(--Grayish_blue);
+        font-size: 12px;
+    }
+    .sec-two .sec2-sub-1
+    {
+        margin-top: 15px;
+    }
+
+    .sec2-sub-3{
+        line-height: 1.2rem;
+        padding: 15px 0px;
+    }
+    /* section two styling Ends */
+
+    /* section three styling starts here */
+    .sec-three
+    {
+        margin-top: 40px;
+    }
+
+    .sec-three .info-box
+    {
+        display: grid;
+        grid-template-columns: 75px 1fr;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+
+    .sec-three .info-box h2{
+        color: var(--Grayish_blue);
+    }
+
+    .sec-three .info-box h3
+    {
+        margin-top: 7px;
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+    .sec-three .info-box p
+
+    {
+        color:var(--Dark_grayish_blue);
+        margin-top: 7px;
+        line-height: 1.2rem;
+        font-size: 12px;
+    }
+    /* section three styling Ends here */
+
+    /* mobile nav bar styling starts here */
+    .mobile-nav-bar
+    {
+        display: none;
+    }
+     .onclick-nav-bar
+     {
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        background-color: rgba(0,0,0,.5);
+        overflow: hidden;
+        transition: .1s;
+        
+     }
+     
+     .onclick-nav-bar .nav-bar{
+        background-color: var(--Off-white);
+     }
+
+     .onclick-nav-bar .nav-bar .nav-header
+     {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+     }
+     .onclick-nav-bar .nav-bar .nav-menus a
+     {
+        color: var(--Very_dark_blue);
+        display: block;
+        margin: 20px 20px;
+        font-size: 15px;
+        font-weight:bold;
+     }
+     .onclick-nav-bar .nav-bar .nav-menus a:first-child
+     {
+        margin-top: 50px;
+     }
+
+    /* mobile nav bar styling Ends here */
+
+}
